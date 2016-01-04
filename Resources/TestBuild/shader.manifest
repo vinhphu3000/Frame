@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 357915907
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0a3bc93f923b1fed29168e3d9005674b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1089fea0bc7521f04d7ee9836950478
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/NGUI/Resources/Shaders/Unlit - Transparent Masked 1.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Text 2.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Transparent Masked 2.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Text 1.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Premultiplied Colored (TextureClip).shader
+- Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored (Packed) (TextureClip).shader
+- Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored 2.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Premultiplied Colored 3.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored (TextureClip).shader
+- Assets/NGUI/Resources/Shaders/Unlit - Transparent Masked 3.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored 1.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored 3.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Premultiplied Colored 2.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Text 3.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Transparent Packed 2.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Transparent Packed 1.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Premultiplied Colored 1.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Premultiplied Colored.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Transparent Colored.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Text.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Transparent Packed.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Transparent Packed 3.shader
+- Assets/NGUI/Resources/A_RPBShader/S_DualETCTransparentColored.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Transparent Masked.shader
+- Assets/NGUI/Resources/Shaders/Unlit - Text (TextureClip).shader
+Dependencies: []

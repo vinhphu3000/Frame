@@ -1,0 +1,116 @@
+[
+  {
+    "md5": null,
+    "name": "AsynchPvpAtlas-Test",
+    "depends": [
+      "AsynchPvpAtlas"
+    ]
+  },
+  {
+    "md5": null,
+    "name": "BackpackWnd",
+    "depends": [
+      "ConsumeAtlas",
+      "FZY4JW",
+      "MainAtlas",
+      "TextAtlas",
+      "BaseAtlas"
+    ]
+  },
+  {
+    "md5": null,
+    "name": "BaseAtlas-Test",
+    "depends": [
+      "BaseAtlas"
+    ]
+  },
+  {
+    "md5": null,
+    "name": "Consume-Test",
+    "depends": [
+      "ConsumeAtlas"
+    ]
+  },
+  {
+    "md5": null,
+    "name": "Crusade-Test",
+    "depends": [
+      "CrusadeAtlas"
+    ]
+  },
+  {
+    "md5": null,
+    "name": "Hero-Test",
+    "depends": [
+      "HeroAtlas"
+    ]
+  },
+  {
+    "md5": null,
+    "name": "Main-Test",
+    "depends": [
+      "MainAtlas"
+    ]
+  },
+  {
+    "md5": null,
+    "name": "RankWnd",
+    "depends": [
+      "CrusadeAtlas",
+      "AsynchPvpAtlas",
+      "FZY4JW",
+      "TextAtlas",
+      "HeroAtlas",
+      "BaseAtlas"
+    ]
+  },
+  {
+    "md5": null,
+    "name": "RecuitWnd",
+    "depends": [
+      "FZY4JW",
+      "TextAtlas",
+      "ShopAtlas",
+      "BaseAtlas"
+    ]
+  },
+  {
+    "md5": null,
+    "name": "RuleWnd",
+    "depends": [
+      "FZY4JW",
+      "TextAtlas",
+      "BaseAtlas"
+    ]
+  },
+  {
+    "md5": null,
+    "name": "Shop-Tes",
+    "depends": [
+      "ShopAtlas"
+    ]
+  },
+  {
+    "md5": null,
+    "name": "Test_111",
+    "depends": [
+      "ConsumeAtlas",
+      "FZY4JW",
+      "MainAtlas",
+      "TextAtlas",
+      "BaseAtlas"
+    ]
+  },
+  {
+    "md5": null,
+    "name": "Text-Test",
+    "depends": [
+      "TextAtlas"
+    ]
+  },
+  {
+    "md5": null,
+    "name": "UI Root",
+    "depends": []
+  }
+]

@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 4270664304
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f1a746ee4141e8b845bac9a5850cc4c2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 20c620dd376273e9b8b62b50484b60f5
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/LocalResources/Windows/Text-Test.prefab
+Dependencies:
+- E:/Unity Project/Frame/Resources/StandalonesNew/textatlas

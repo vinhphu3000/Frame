@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 1097064598
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c211e886624d224a5ee4b426872ec35a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a45e06cb379ad8690d3a21e98cedf99
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+Assets:
+- Assets/LocalResources/Windows/Test_111.prefab
+Dependencies:
+- E:/Unity Project/Frame/Project/Assets/../../Resources/TestBuildNew/consumeatlas
+- E:/Unity Project/Frame/Project/Assets/../../Resources/TestBuildNew/fzy4jw
+- E:/Unity Project/Frame/Project/Assets/../../Resources/TestBuildNew/mainatlas
+- E:/Unity Project/Frame/Project/Assets/../../Resources/TestBuildNew/textatlas
+- E:/Unity Project/Frame/Project/Assets/../../Resources/TestBuildNew/baseatlas

@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 1119064620
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 127767029348f901caf5608a5e6452dc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 1b01552758da2e070963491e49f9e3a2
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/_Art/Model/Player/meiying/Materials/MY_F_Weapon_001.mat
+- Assets/_Art/Model/Player/meiying/Materials/MY_Z_Weapon_002.mat
+- Assets/_Art/Model/Player/meiying/Animation/m_z_bounce.anim
+- Assets/_Art/Model/Player/meiying/Materials/MY_Z_Weapon_001.tga
+- Assets/_Art/Model/Player/meiying/Materials/MY_F_Weapon_002.mat
+- Assets/_Art/Model/Player/meiying/Materials/MY_Z_Weapon_002.tga
+- Assets/_Art/Model/Player/meiying/Materials/MY_Z_Weapon_001.mat
+- Assets/_Art/Model/Player/meiying/Material/MY_Z_Weapon_001.mat
+- Assets/_Art/Model/Player/meiying/Material/MY_F_Weapon_002.mat
+- Assets/_Art/Model/Player/meiying/Material/MY_001.mat
+- Assets/_Art/Model/Player/meiying/Materials/MY_F_Weapon_001.tga
+- Assets/_Art/Model/Player/meiying/Materials/MY_001.mat
+- Assets/_Art/Model/Player/meiying/Materials/MY_001.tga
+- Assets/_Art/Model/Player/meiying/Material/MY_F_Weapon_001.mat
+- Assets/_Art/Model/Player/meiying/Materials/MY_F_Weapon_002.tga
+- Assets/_Art/Model/Player/meiying/Material/MY_Z_Weapon_002.mat
+Dependencies: []

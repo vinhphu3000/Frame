@@ -1,0 +1,14 @@
+AsynchPvpAtlas-Test::AsynchPvpAtlas
+BackpackWnd::ConsumeAtlas,FZY4JW,MainAtlas,TextAtlas,BaseAtlas
+BaseAtlas-Test::BaseAtlas
+Consume-Test::ConsumeAtlas
+Crusade-Test::CrusadeAtlas
+Hero-Test::HeroAtlas
+Main-Test::MainAtlas
+RankWnd::CrusadeAtlas,AsynchPvpAtlas,FZY4JW,TextAtlas,HeroAtlas,BaseAtlas
+RecuitWnd::FZY4JW,TextAtlas,ShopAtlas,BaseAtlas
+RuleWnd::FZY4JW,TextAtlas,BaseAtlas
+Shop-Tes::ShopAtlas
+Test_111::ConsumeAtlas,FZY4JW,MainAtlas,TextAtlas,BaseAtlas
+Text-Test::TextAtlas
+UI Root::

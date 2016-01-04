@@ -1,0 +1,31 @@
+{
+  "mExporterPlanDatas": [
+    {
+      "Name": "Atlas",
+      "FileMatching": "Assets/_Art/Atlas",
+      "FileType": [
+        ".prefab",
+        ".ttf"
+      ]
+    },
+    {
+      "Name": "PersonModel",
+      "FileMatching": "Assets/_Art/Model",
+      "FileType": [
+        ".fbx",
+        ".jpg",
+        ".mat",
+        ".png",
+        ".tga",
+        ".anim"
+      ]
+    },
+    {
+      "Name": "Font",
+      "FileMatching": "Assets/_Art/Fonts",
+      "FileType": [
+        ".ttf"
+      ]
+    }
+  ]
+}

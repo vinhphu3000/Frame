@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: b590a0d9834aa864ebe9099a3b64e872
+timeCreated: 1436706954
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: b_cloth
+    100004: bag
+    100006: BUFFBONE_GLB_CHANNEL_LOC
+    100008: BUFFBONE_GLB_GROUND_LOC
+    100010: BUFFBONE_GLB_WEAPON_1
+    100012: C_BUFFBONE_GLB_CENTER_LOC
+    100014: C_BUFFBONE_GLB_CHEST_LOC
+    100016: C_BUFFBONE_GLB_HEAD_LOC
+    100018: C_BUFFBONE_GLB_LAYOUT_LOC
+    100020: C_BUFFBONE_GLB_OVERHEAD_LOC
+    100022: f_cloth
+    100024: head
+    100026: L_arm
+    100028: L_BUFFBONE_GLB_FOOT_LOC
+    100030: L_BUFFBONE_GLB_HAND_LOC
+    100032: L_calf
+    100034: L_cloth
+    100036: L_finger
+    100038: L_foot
+    100040: L_forarm
+    100042: L_hair
+    100044: L_hand
+    100046: L_PARENTING_HAND_LOC
+    100048: L_shouder
+    100050: L_thigh
+    100052: L_toe
+    100054: neck
+    100056: particleemitter_tip
+    100058: pelvis
+    100060: R_arm
+    100062: R_BUFFBONE_GLB_FOOT_LOC
+    100064: R_BUFFBONE_GLB_HAND_LOC
+    100066: R_calf
+    100068: R_cloth
+    100070: R_finger
+    100072: R_foot
+    100074: R_forarm
+    100076: R_hair
+    100078: R_hand
+    100080: R_PARENTING_HAND_LOC
+    100082: R_shouder
+    100084: R_thigh
+    100086: R_toe
+    100088: root
+    100090: spine
+    100092: transformAnnie_prom
+    100094: weapon
+    400000: //RootNode
+    400002: b_cloth
+    400004: bag
+    400006: BUFFBONE_GLB_CHANNEL_LOC
+    400008: BUFFBONE_GLB_GROUND_LOC
+    400010: BUFFBONE_GLB_WEAPON_1
+    400012: C_BUFFBONE_GLB_CENTER_LOC
+    400014: C_BUFFBONE_GLB_CHEST_LOC
+    400016: C_BUFFBONE_GLB_HEAD_LOC
+    400018: C_BUFFBONE_GLB_LAYOUT_LOC
+    400020: C_BUFFBONE_GLB_OVERHEAD_LOC
+    400022: f_cloth
+    400024: head
+    400026: L_arm
+    400028: L_BUFFBONE_GLB_FOOT_LOC
+    400030: L_BUFFBONE_GLB_HAND_LOC
+    400032: L_calf
+    400034: L_cloth
+    400036: L_finger
+    400038: L_foot
+    400040: L_forarm
+    400042: L_hair
+    400044: L_hand
+    400046: L_PARENTING_HAND_LOC
+    400048: L_shouder
+    400050: L_thigh
+    400052: L_toe
+    400054: neck
+    400056: particleemitter_tip
+    400058: pelvis
+    400060: R_arm
+    400062: R_BUFFBONE_GLB_FOOT_LOC
+    400064: R_BUFFBONE_GLB_HAND_LOC
+    400066: R_calf
+    400068: R_cloth
+    400070: R_finger
+    400072: R_foot
+    400074: R_forarm
+    400076: R_hair
+    400078: R_hand
+    400080: R_PARENTING_HAND_LOC
+    400082: R_shouder
+    400084: R_thigh
+    400086: R_toe
+    400088: root
+    400090: spine
+    400092: transformAnnie_prom
+    400094: weapon
+    4300000: transformAnnie_prom
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: transformAnnie_prom
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

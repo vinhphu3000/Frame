@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 2548578131
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7a010666ce493aa12aae76b9e3647d66
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 020ee34c36bb11e502ce0a729d34523a
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 143
+  Script: {instanceID: 0}
+Assets:
+- Assets/LocalResources/Model/Actor_meiying.prefab
+Dependencies:
+- E:/Unity Project/Frame/Resources/AndroidNew/actor_meiying2
+- E:/Unity Project/Frame/Resources/AndroidNew/actor_meiying1

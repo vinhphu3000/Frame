@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: actor_meiying
+      Dependencies:
+        Dependency_0: actor_meiying2
+        Dependency_1: actor_meiying1
+    Info_1:
+      Name: shader
+      Dependencies: {}
+    Info_2:
+      Name: actor_meiying2
+      Dependencies: {}
+    Info_3:
+      Name: actor_meiying1
+      Dependencies: {}

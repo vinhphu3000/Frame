@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 2810232877
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2634337810c09b750fbe81a49eaceac7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 20c620dd376273e9b8b62b50484b60f5
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/LocalResources/Windows/Main-Test.prefab
+Dependencies:
+- E:/Unity Project/Frame/Project/Assets/../../Resources/TestBuildNew/mainatlas

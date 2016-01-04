@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1466604662
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 97a8ea2e48d0dccf12ca960f43e3f2f6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: dc8eb627370cc368636e11317bbd7340
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+Assets:
+- Assets/_Art/Fonts/FZY4JW.TTF
+Dependencies: []

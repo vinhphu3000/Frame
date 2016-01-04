@@ -1,0 +1,46 @@
+[
+  {
+    "Name": "None",
+    "Matching": [
+      ""
+    ],
+    "GroupData": [
+      {
+        "Type": 0,
+        "GroupNumber": 0
+      }
+    ]
+  },
+  {
+    "Name": "Atlas",
+    "Matching": [
+      "\\Windows"
+    ],
+    "GroupData": [
+      {
+        "Type": 4,
+        "GroupNumber": -1
+      },
+      {
+        "Type": 5,
+        "GroupNumber": -1
+      }
+    ]
+  },
+  {
+    "Name": "Model",
+    "Matching": [
+      "\\Model"
+    ],
+    "GroupData": [
+      {
+        "Type": 1,
+        "GroupNumber": 1
+      },
+      {
+        "Type": 2,
+        "GroupNumber": 1
+      }
+    ]
+  }
+]

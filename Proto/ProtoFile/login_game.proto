@@ -1,0 +1,8 @@
+option optimize_for = LITE_RUNTIME;
+package ProtoBuf;
+/*protocol = 0x00010101*/
+message CSLoginGame
+{
+	optional string m_nAccount = 1;
+	optional string m_nPassword = 2;
+}

@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 708698970
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 98ff985c6f6a4e5890b21d2569142a0b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 56f376408047093708361a79c41d11eb
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/_Art/Atlas/Main/MainAtlas.prefab
+Dependencies:
+- E:/Unity Project/Frame/Project/Assets/../../Resources/TestBuild/shader

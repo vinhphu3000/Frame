@@ -1,0 +1,46 @@
+ManifestFileVersion: 0
+CRC: 1754595323
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2d01a613ec21c786eba0eeda85be8f9d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 1e05b48bdf9804fabbe4e2bc3a785346
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/_Art/Model/Player/meiying/Animation/m_z_runfront_02.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_standhit.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_f_walk_R.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_p_01b.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_f_shoot.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_f_stand.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_stand_f.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_skill_01.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_p_02a.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_knockback.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_p_01a.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_downstand.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_f_runfront_02.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_f_walk_L.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_f_walk_F.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_knockout.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_rush.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_runfront_01.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_dead.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_WinAction.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_p_03a.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_digup.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_p_03b.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_f_runfront_01.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_f_walk_B.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_p_04.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_skill_03.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_dizzy.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_p_02b.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_skill_04.anim
+- Assets/_Art/Model/Player/meiying/Animation/m_z_skill_02.anim
+Dependencies: []

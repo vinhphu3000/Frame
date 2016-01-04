@@ -1,0 +1,144 @@
+[
+  {
+    "bundlePath": "Assets/LocalResources/Windows/BackpackWnd.prefab",
+    "size": 13952,
+    "crc": 2367013972,
+    "changeTime": -8587502427392538797,
+    "lastDependencies": [
+      "Assets/_Art/Atlas/Consume/ConsumeAtlas.prefab",
+      "Assets/_Art/Fonts/FZY4JW.TTF",
+      "Assets/_Art/Atlas/Main/MainAtlas.prefab",
+      "Assets/_Art/Atlas/Text/TextAtlas.prefab",
+      "Assets/_Art/Atlas/Base/BaseAtlas.prefab"
+    ]
+  },
+  {
+    "bundlePath": "Assets/LocalResources/Windows/RankWnd.prefab",
+    "size": 9633,
+    "crc": 1783226918,
+    "changeTime": -8587502427340410950,
+    "lastDependencies": [
+      "Assets/_Art/Atlas/Crusade/CrusadeAtlas.prefab",
+      "Assets/_Art/Atlas/AsynchPvp/AsynchPvpAtlas.prefab",
+      "Assets/_Art/Fonts/FZY4JW.TTF",
+      "Assets/_Art/Atlas/Text/TextAtlas.prefab",
+      "Assets/_Art/Atlas/Hero/HeroAtlas.prefab",
+      "Assets/_Art/Atlas/Base/BaseAtlas.prefab"
+    ]
+  },
+  {
+    "bundlePath": "Assets/LocalResources/Windows/RecuitWnd.prefab",
+    "size": 7194,
+    "crc": 3631704100,
+    "changeTime": -8587502427314522274,
+    "lastDependencies": [
+      "Assets/_Art/Fonts/FZY4JW.TTF",
+      "Assets/_Art/Atlas/Text/TextAtlas.prefab",
+      "Assets/_Art/Atlas/Shop/ShopAtlas.prefab",
+      "Assets/_Art/Atlas/Base/BaseAtlas.prefab"
+    ]
+  },
+  {
+    "bundlePath": "Assets/LocalResources/Windows/RuleWnd.prefab",
+    "size": 6933,
+    "crc": 712046536,
+    "changeTime": -8587502427291487331,
+    "lastDependencies": [
+      "Assets/_Art/Fonts/FZY4JW.TTF",
+      "Assets/_Art/Atlas/Text/TextAtlas.prefab",
+      "Assets/_Art/Atlas/Base/BaseAtlas.prefab"
+    ]
+  },
+  {
+    "bundlePath": "Assets/LocalResources/Windows/UI Root.prefab",
+    "size": 3248,
+    "crc": 33516170,
+    "changeTime": -8587502427256352948,
+    "lastDependencies": []
+  },
+  {
+    "bundlePath": "Assets/LocalResources/Windows/AsynchPvpAtlas-Test.prefab",
+    "size": 2184,
+    "crc": 1845122420,
+    "changeTime": -8587500284427683618,
+    "lastDependencies": [
+      "Assets/_Art/Atlas/AsynchPvp/AsynchPvpAtlas.prefab"
+    ]
+  },
+  {
+    "bundlePath": "Assets/LocalResources/Windows/BaseAtlas-Test.prefab",
+    "size": 2148,
+    "crc": 2276264635,
+    "changeTime": -8587502427379514247,
+    "lastDependencies": [
+      "Assets/_Art/Atlas/Base/BaseAtlas.prefab"
+    ]
+  },
+  {
+    "bundlePath": "Assets/LocalResources/Windows/Consume-Test.prefab",
+    "size": 2184,
+    "crc": 15019648,
+    "changeTime": -8587502427376618607,
+    "lastDependencies": [
+      "Assets/_Art/Atlas/Consume/ConsumeAtlas.prefab"
+    ]
+  },
+  {
+    "bundlePath": "Assets/LocalResources/Windows/Crusade-Test.prefab",
+    "size": 2188,
+    "crc": 3124901729,
+    "changeTime": -8587502427373569886,
+    "lastDependencies": [
+      "Assets/_Art/Atlas/Crusade/CrusadeAtlas.prefab"
+    ]
+  },
+  {
+    "bundlePath": "Assets/LocalResources/Windows/Hero-Test.prefab",
+    "size": 2175,
+    "crc": 2814631072,
+    "changeTime": -8587502427370526181,
+    "lastDependencies": [
+      "Assets/_Art/Atlas/Hero/HeroAtlas.prefab"
+    ]
+  },
+  {
+    "bundlePath": "Assets/LocalResources/Windows/Main-Test.prefab",
+    "size": 2174,
+    "crc": 2457215150,
+    "changeTime": -8587502427368118226,
+    "lastDependencies": [
+      "Assets/_Art/Atlas/Main/MainAtlas.prefab"
+    ]
+  },
+  {
+    "bundlePath": "Assets/LocalResources/Windows/Shop-Tes.prefab",
+    "size": 2174,
+    "crc": 226421852,
+    "changeTime": -8587502427287788291,
+    "lastDependencies": [
+      "Assets/_Art/Atlas/Shop/ShopAtlas.prefab"
+    ]
+  },
+  {
+    "bundlePath": "Assets/LocalResources/Windows/Text-Test.prefab",
+    "size": 2189,
+    "crc": 481282824,
+    "changeTime": -8587502427258003085,
+    "lastDependencies": [
+      "Assets/_Art/Atlas/Text/TextAtlas.prefab"
+    ]
+  },
+  {
+    "bundlePath": "Assets/LocalResources/Windows/Test_111.prefab",
+    "size": 3533,
+    "crc": 3828624661,
+    "changeTime": -8587502427262061635,
+    "lastDependencies": [
+      "Assets/_Art/Atlas/Consume/ConsumeAtlas.prefab",
+      "Assets/_Art/Fonts/FZY4JW.TTF",
+      "Assets/_Art/Atlas/Main/MainAtlas.prefab",
+      "Assets/_Art/Atlas/Text/TextAtlas.prefab",
+      "Assets/_Art/Atlas/Base/BaseAtlas.prefab"
+    ]
+  }
+]

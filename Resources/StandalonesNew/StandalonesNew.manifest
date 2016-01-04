@@ -1,0 +1,114 @@
+ManifestFileVersion: 0
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: asynchpvpatlas-test
+      Dependencies:
+        Dependency_0: asynchpvpatlas
+    Info_1:
+      Name: asynchpvpatlas
+      Dependencies:
+        Dependency_0: shader
+    Info_2:
+      Name: backpackwnd
+      Dependencies:
+        Dependency_0: consumeatlas
+        Dependency_1: fzy4jw
+        Dependency_2: mainatlas
+        Dependency_3: textatlas
+        Dependency_4: baseatlas
+    Info_3:
+      Name: consumeatlas
+      Dependencies:
+        Dependency_0: shader
+    Info_4:
+      Name: fzy4jw
+      Dependencies: {}
+    Info_5:
+      Name: mainatlas
+      Dependencies:
+        Dependency_0: shader
+    Info_6:
+      Name: textatlas
+      Dependencies:
+        Dependency_0: shader
+    Info_7:
+      Name: baseatlas
+      Dependencies:
+        Dependency_0: shader
+    Info_8:
+      Name: baseatlas-test
+      Dependencies:
+        Dependency_0: baseatlas
+    Info_9:
+      Name: consume-test
+      Dependencies:
+        Dependency_0: consumeatlas
+    Info_10:
+      Name: crusade-test
+      Dependencies:
+        Dependency_0: crusadeatlas
+    Info_11:
+      Name: crusadeatlas
+      Dependencies:
+        Dependency_0: shader
+    Info_12:
+      Name: hero-test
+      Dependencies:
+        Dependency_0: heroatlas
+    Info_13:
+      Name: heroatlas
+      Dependencies:
+        Dependency_0: shader
+    Info_14:
+      Name: main-test
+      Dependencies:
+        Dependency_0: mainatlas
+    Info_15:
+      Name: rankwnd
+      Dependencies:
+        Dependency_0: asynchpvpatlas
+        Dependency_1: fzy4jw
+        Dependency_2: textatlas
+        Dependency_3: baseatlas
+        Dependency_4: crusadeatlas
+        Dependency_5: heroatlas
+    Info_16:
+      Name: recuitwnd
+      Dependencies:
+        Dependency_0: fzy4jw
+        Dependency_1: textatlas
+        Dependency_2: baseatlas
+        Dependency_3: shopatlas
+    Info_17:
+      Name: shopatlas
+      Dependencies:
+        Dependency_0: shader
+    Info_18:
+      Name: rulewnd
+      Dependencies:
+        Dependency_0: fzy4jw
+        Dependency_1: textatlas
+        Dependency_2: baseatlas
+    Info_19:
+      Name: shop-tes
+      Dependencies:
+        Dependency_0: shopatlas
+    Info_20:
+      Name: test_111
+      Dependencies:
+        Dependency_0: consumeatlas
+        Dependency_1: fzy4jw
+        Dependency_2: mainatlas
+        Dependency_3: textatlas
+        Dependency_4: baseatlas
+    Info_21:
+      Name: text-test
+      Dependencies:
+        Dependency_0: textatlas
+    Info_22:
+      Name: ui root
+      Dependencies: {}
+    Info_23:
+      Name: shader
+      Dependencies: {}

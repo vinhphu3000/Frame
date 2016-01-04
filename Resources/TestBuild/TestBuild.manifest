@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: backpackwnd
+      Dependencies:
+        Dependency_0: consumeatlas
+        Dependency_1: fzy4jw
+        Dependency_2: mainatlas
+        Dependency_3: textatlas
+        Dependency_4: baseatlas
+    Info_1:
+      Name: consumeatlas
+      Dependencies:
+        Dependency_0: shader
+    Info_2:
+      Name: fzy4jw
+      Dependencies: {}
+    Info_3:
+      Name: mainatlas
+      Dependencies:
+        Dependency_0: shader
+    Info_4:
+      Name: textatlas
+      Dependencies:
+        Dependency_0: shader
+    Info_5:
+      Name: baseatlas
+      Dependencies:
+        Dependency_0: shader
+    Info_6:
+      Name: shader
+      Dependencies: {}

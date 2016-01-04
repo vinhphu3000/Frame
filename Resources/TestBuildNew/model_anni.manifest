@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 2839775444
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cc959bdd42dc7fa9e261570e9611c429
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f0e3a30417f312312b41396c065113b1
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/LocalResources/Model/model_anni.prefab
+Dependencies:
+- E:/Unity Project/Frame/Project/Assets/../../Resources/TestBuildNew/model_anni1

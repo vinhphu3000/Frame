@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 770635552
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8b74c8991237122f525220140d504d81
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b5a832dc844411c5d07a5cd236c411cd
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+Assets:
+- Assets/LocalResources/Windows/Test_111.prefab
+Dependencies:
+- E:/Unity Project/Frame/Resources/StandalonesNew/consumeatlas
+- E:/Unity Project/Frame/Resources/StandalonesNew/fzy4jw
+- E:/Unity Project/Frame/Resources/StandalonesNew/mainatlas
+- E:/Unity Project/Frame/Resources/StandalonesNew/textatlas
+- E:/Unity Project/Frame/Resources/StandalonesNew/baseatlas

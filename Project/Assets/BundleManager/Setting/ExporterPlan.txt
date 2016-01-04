@@ -1,0 +1,17 @@
+{
+  "ListExporterPlan": [
+    {
+      "Path": "E:/Unity Project/Frame/Project/Assets/_Art/Atlas",
+      "Suffixs": [
+        "*.png",
+        "*.prefab"
+      ]
+    },
+    {
+      "Path": "E:/Unity Project/Frame/Project/Assets/_Art/Fonts",
+      "Suffixs": [
+        "*.tff"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "isUse5": true,
+  "compress": true,
+  "deterministicBundle": false,
+  "bundleSuffix": "assetBundle",
+  "buildOutputPath": "E:/Unity Project/Frame/Resources",
+  "useCache": true,
+  "useEditorTarget": true,
+  "selectBuildPath": [
+    {
+      "path": "E:/Unity Project/Frame/Project/Assets/LocalResources/Windows",
+      "suffix": "*.prefab"
+    }
+  ],
+  "bundleTarget": 3,
+  "outputs": {}
+}
