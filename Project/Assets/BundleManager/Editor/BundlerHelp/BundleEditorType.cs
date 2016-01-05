@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using UnityEditor;
 using UnityEngine;
 using System.Collections;
@@ -16,6 +17,8 @@ public interface IListElementOwner
     void OnTriggerSelect(ListElement element);
 
     void OnTriggerDeSelect(ListElement element);
+
+    void OnAddNewElement(ListElement element);
 }
 
 
@@ -38,11 +41,26 @@ public class ListElement
 
     public List<ListElement> ChildElements { get; protected set; }
 
+    public ListElement ParentElement { get; protected set; }
+
     public bool State { get; set; }
 
     public bool Select { get; private set; }
 
     public bool DisableFold { get; set; }
+
+    public bool IsGetFile { get; set; }
+
+    public bool IsFolder { get; set; }
+
+    public int InstanceID { get; private set; }
+
+
+    private string mPath;
+    public string Path {
+        get { return mPath; }
+        protected set { mPath = value; }
+    }
 
     private const int verticalfixedspace = 0;
     private const int hierarchyfixedspace = 10;
@@ -50,29 +68,37 @@ public class ListElement
     private const int emptyoffset = hierarchyfixedspace + toggleoffset;
 
 
-    public ListElement(IListElementData data, IListElementOwner owner)
+    public ListElement(IListElementData data, IListElementOwner owner, string path, bool isFolder)
     {
         ElementData = data;
         ElementOwner = owner;
         ChildElements = new List<ListElement>();
-        DisableFold = false;
+        DisableFold = !isFolder;
+        IsGetFile = false;
 
+        this.IsFolder = isFolder;
+        this.Path = path;
 
+        InstanceID = Animator.StringToHash(path);
         data.OnInit(this);
+
+        ElementOwner.OnAddNewElement(this);
     }
 
 
     virtual public void Draw()
     {
-        //EditorGUILayout.Foldout()
-        //EditorGUILayout.BeginVertical
-        //GUI.backgroundColor = Select ? new Color(0.4f, 0.5f, 0.8f) : new Color(0.8f, 0.8f, 0.8f);
-        EditorGUILayout.BeginHorizontal(Select ? "ServerUpdateChangesetOn" : "ServerUpdateChangeset", GUILayout.MaxHeight(20f));
-        //EditorGUILayout.BeginHorizontal(Select ? "LODSliderRangeSelected" : "LODSliderText", GUILayout.MaxHeight(25f));
+
+
+
+        EditorGUILayout.BeginHorizontal(Select ? "LODSliderRangeSelected" : "LODSliderText", GUILayout.MinHeight(20f));
+
+        //GUI.backgroundColor = Select ? Color.blue : Color.white;
+        //EditorGUILayout.BeginHorizontal( "ProjectBrowserTopBarBg",GUILayout.MaxHeight(20f));
         //GUI.backgroundColor = Color.white;
 
         GUILayout.Space(Space);
-        if (ChildElements.Count != 0 && DisableFold == false)
+        if (IsFolder && !DisableFold)
         {
             DrawToggle();
         }
@@ -94,7 +120,10 @@ public class ListElement
     public void AddChild(ListElement element)
     {
         if (ChildElements.Contains(element) == false)
+        {
+            element.ParentElement = this;
             ChildElements.Add(element);
+        }
     }
 
 
@@ -139,9 +168,45 @@ public class ListElement
 
     protected void DrawToggle()
     {
-        if (!GUILayout.Toggle(true, State ? "\u25BC " : "\u25BA ", "label", GUILayout.MaxWidth(15f))) State = !State;
+        if (!GUILayout.Toggle(true, State ? "\u25BC " : "\u25BA ", "label", GUILayout.MaxWidth(15f)))
+        {
+            if (!IsGetFile)
+            {
+                GetChildFile();
+                IsGetFile = true;
+            }
+            State = !State;
+        }
         GUILayout.Space(-toggleoffset);
     }
+
+
+    public void TryUpdateFile()
+    {
+        if (IsGetFile == false)
+        {
+            GetChildFile();
+        }
+    }
+
+    protected void GetChildFile()
+    {
+        string[] files = Directory.GetFiles(Path);
+        for (int i = 0; i < files.Length; i++)
+        {
+            if (BundleDataManager.Instance.IsFilter(ref files[i]))
+                continue;
+
+            string assetFile = BundleHelp.FullPath2AssetPath(ref files[i]);
+            ListElement childElement = new ListElement(new HierarchyListWindow.HierarchyElementData(), ElementOwner, assetFile, false);
+            AddChild(childElement);
+        }
+
+        //Debug.Log(string.Format("Folder Name [{0}] Get Child File Count [{1}]", BundleHelp.GetFolderName(ref mPath), files.Length));
+
+        ResetSpace();
+    }
+
 }
 
 
@@ -242,12 +307,12 @@ public class AreaBox
     }
 
 
-    public void BegainArea(float windowWidth, float windowHeight)
+    public void BegainArea(float windowWidth, float windowHeight, string style = "")
     {
         mWindowRect.width = windowWidth;
         mWindowRect.height = windowHeight;
         CalcArea();
-        GUILayout.BeginArea(mArea, "", "Wizard Box");
+        GUILayout.BeginArea(mArea, "", string.IsNullOrEmpty(style) ? "Wizard Box" : style);
     }
 
 

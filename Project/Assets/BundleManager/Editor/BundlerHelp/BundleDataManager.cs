@@ -19,7 +19,7 @@ public class BundleDataManager : Singleton<BundleDataManager>
     private List<string> mFolderList;
     [SerializeField]
 // ReSharper disable once InconsistentNaming
-    private Dictionary<string, InspectorElement> mResourcElements;
+    private Dictionary<int, InspectorElement> mResourcElements;
     [SerializeField]
 // ReSharper disable once InconsistentNaming
     private List<BuildStrategy> mBuildStrategies;
@@ -71,14 +71,14 @@ public class BundleDataManager : Singleton<BundleDataManager>
         }
     } 
 
-    public Dictionary<string, InspectorElement> ResourcElements
+    public Dictionary<int, InspectorElement> ResourcElements
     {
         get
         {
             if (mResourcElements == null)
             {
-                mResourcElements = LoadJson<Dictionary<string, InspectorElement>>(ResourcElementsPath) ??
-                                   new Dictionary<string, InspectorElement>();
+                mResourcElements = LoadJson<Dictionary<int, InspectorElement>>(ResourcElementsPath) ??
+                                   new Dictionary<int, InspectorElement>();
             }
             return mResourcElements;
         }
@@ -144,10 +144,10 @@ public class BundleDataManager : Singleton<BundleDataManager>
     public void SaveAll()
     {
         SaveResourcElements();
-        SaveFolderList();
-        SaveFilterSuffix();
-        SaveBuildStrategy();
-        SaveBuildExporterPlan();
+        //SaveFolderList();
+        //SaveFilterSuffix();
+        //SaveBuildStrategy();
+        //SaveBuildExporterPlan();
     }
 
 
@@ -186,22 +186,84 @@ public class BundleDataManager : Singleton<BundleDataManager>
         return false;
     }
 
-    public void AddResource(string assetPath, bool isFolder)
+    public bool OnAddNewElement(ListElement element)
     {
-        if (!isFolder && !assetPath.EndsWith(".prefab"))
-            return;
+        InspectorElement newElement = InspectorElement.GetInspectorElement(element);
 
-        //assetPath = BundleHelp.FullPath2AssetPath(ref assetPath);
-        if (ResourcElements.ContainsKey(assetPath) == false)
+        if (ResourcElements.ContainsKey(element.InstanceID) == false)
         {
-            if (isFolder)
-                mResourcElements.Add(assetPath, new InspectorElementFolder(assetPath));
-            else
-            {
-                mResourcElements.Add(assetPath, new InspectorElementPrefab(assetPath));
-            }
+            ResourcElements.Add(element.InstanceID, newElement);
+            return true;
         }
+        else if (ResourcElements[element.InstanceID] != newElement)
+        {
+            Debug.LogError(string.Format("hash conflict file [{0}] file [{1}] hash [{2}]", ResourcElements[element.InstanceID].AssetFilePath, element.Path, element.InstanceID));
+        }
+
+        return false;
     }
+
+
+    public InspectorElement GetInspectorElement(int instanceID)
+    {
+        if (ResourcElements.ContainsKey(instanceID))
+        {
+            return ResourcElements[instanceID];
+        }
+        return null;
+    }
+
+    public InspectorElement CreateInspectorElement(string assetFilePath, bool isFolder)
+    {
+        InspectorElement element = null;
+        if (isFolder)
+            element = new InspectorElementFolder(assetFilePath);
+        else if (Path.GetExtension(assetFilePath) == ".prefab")
+        {
+            element = new InspectorElementPrefab(assetFilePath);
+        }
+        else
+        {
+            element = new InspectorElement(assetFilePath);
+        }
+
+        return element;
+    }
+
+
+    public InspectorElement CreateInspectorElement(ref string assetFilePath, bool isFolder)
+    {
+        InspectorElement element = null;
+        if (isFolder)
+            element = new InspectorElementFolder(assetFilePath);
+        else if (Path.GetExtension(assetFilePath) == ".prefab")
+        {
+            element = new InspectorElementPrefab(assetFilePath);
+        }
+        else
+        {
+            element = new InspectorElement(assetFilePath);
+        }
+
+        return element;
+    }
+
+    //public void AddResource(string assetPath, bool IsFolder)
+    //{
+    //    if (!IsFolder && !assetPath.EndsWith(".prefab"))
+    //        return;
+
+    //    //assetPath = BundleHelp.FullPath2AssetPath(ref assetPath);
+    //    if (ResourcElements.ContainsKey(assetPath) == false)
+    //    {
+    //        if (IsFolder)
+    //            mResourcElements.Add(assetPath, new InspectorElementFolder(assetPath));
+    //        else
+    //        {
+    //            mResourcElements.Add(assetPath, new InspectorElementPrefab(assetPath));
+    //        }
+    //    }
+    //}
 
     //public void AddResourceAssetPath(string assetPath, bool isfolder)
     //{

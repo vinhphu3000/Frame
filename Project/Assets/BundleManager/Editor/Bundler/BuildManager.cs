@@ -276,7 +276,7 @@ public class BuildManager
         string beforBundleManifestPath = outputFile + "/" + beforBundleManifest;
         if (File.Exists(beforBundleManifestPath))
         {
-            AssetBundle ab = AssetBundle.CreateFromMemoryImmediate(File.ReadAllBytes(beforBundleManifestPath));
+            AssetBundle ab = AssetBundle.LoadFromMemory(File.ReadAllBytes(beforBundleManifestPath));
             return ab.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
         }
         
@@ -323,7 +323,7 @@ public class BuildManager
 
     public static void BuildSingleByElementFolder(InspectorElementFolder folder, ListElement noder, bool immediatelyExecute = false)
     {
-        ClearBundleName();
+        //ClearBundleName();
 
         if (!immediatelyExecute && folder.IsIgnoreAll)
         {
@@ -361,12 +361,14 @@ public class BuildManager
             var elementData = allElements[i].ElementData as HierarchyListWindow.HierarchyElementData;
             if (elementData != null && !elementData.IsFolder)
             {
-                InspectorElement elementPrefab = null;
-                if (BundleDataManager.Instance.ResourcElements.TryGetValue(elementData.AssetFilePath, out elementPrefab))
+
+                InspectorElement elementPrefab = elementData.ElementData as InspectorElementPrefab;
+
+                if (elementPrefab != null)
                 {
                     if (elementPrefab.isIgnore == false)
                     {
-                        var eledata = GetBundleBuildByElementPrefab((InspectorElementPrefab) elementPrefab);
+                        var eledata = GetBundleBuildByElementPrefab((InspectorElementPrefab)elementPrefab);
                         for (int j = 0; j < eledata.Count; j++)
                         {
                             if (filterStr.Contains(eledata[j].assetBundleName) == false)
@@ -381,6 +383,12 @@ public class BuildManager
                         Debug.Log(string.Format("Ignore Asset File [{0}]!", elementPrefab.AssetFilePath));
                     }
                 }
+                //elementPrefab = ;
+                
+                //if (BundleDataManager.Instance.ResourcElements.TryGetValue(elementData.AssetFilePath, out elementPrefab))
+                //{
+                    
+                //}
             }
         }
 
@@ -441,6 +449,8 @@ public class BuildManager
 
     public static void GetCurrentChildElements(ListElement parentElement, ref List<ListElement> result)
     {
+        parentElement.TryUpdateFile();
+
         //  子文件没有子节点
         if (parentElement.ChildElements.Count == 0)
         {
@@ -458,6 +468,9 @@ public class BuildManager
 
     public static void GetSubFolderChildElements(ListElement parentElement, ref List<ListElement> result)
     {
+
+        parentElement.TryUpdateFile();
+
         //  子文件没有子节点
         if (parentElement.ChildElements.Count == 0)
         {

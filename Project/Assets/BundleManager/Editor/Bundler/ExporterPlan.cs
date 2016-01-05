@@ -100,7 +100,7 @@ public sealed class BuildExporterPlan
 
     public bool IsExportFileType(string path)
     {
-        string suffix = Path.GetExtension(path);
+        string suffix = Path.GetExtension(path).ToLower();
         for (int i = 0; i < mExporterPlanDatas.Count; i++)
         {
             if (path.Contains(mExporterPlanDatas[i].FileMatching) && mExporterPlanDatas[i].IsExportFileType(ref suffix))

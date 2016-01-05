@@ -24,4 +24,14 @@ public sealed class BundleHelp
         return src;
 #endif
     }
+
+
+    static public string GetFolderName(ref string src)
+    {
+        if (Directory.Exists(src))
+        {
+            return new DirectoryInfo(src).Name;
+        }
+        return string.Empty;
+    }
 }

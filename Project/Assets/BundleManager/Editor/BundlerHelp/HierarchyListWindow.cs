@@ -14,6 +14,8 @@ public class HierarchyListWindow : SubWindow, IListElementOwner
 
     public System.Action<ListElement> OnSelectChangeAction;
 
+    //private Dictionary<int, ListElement> mAllElements; 
+
 
     public class HierarchyElementData : IListElementData
     {
@@ -22,41 +24,33 @@ public class HierarchyListWindow : SubWindow, IListElementOwner
 
         public string AssetFilePath
         {
-            get { return ElementData.AssetFilePath; }
+            get { return mListElement.Path; }
         }
 
         public bool IsFolder
         {
-            get { return ElementData.isFolder; }
+            get { return mListElement.IsFolder; }
         }
-
-        public bool IsExistDataMng
-        {
-            get { return isExistDataMng; }
-        }
-
 
         private InspectorElement mElementData;
         public InspectorElement ElementData 
         { 
             get { return mElementData; }
-            set { mElementData = value; }
+            protected set { mElementData = value; }
         }
 
-        public HierarchyElementData(string assetfilePath, bool isFolder)
+        private ListElement mListElement;
+        public ListElement ListElement
         {
-            if (!BundleDataManager.Instance.ResourcElements.TryGetValue(assetfilePath, out mElementData))
-            {
-                mElementData = new InspectorElement(assetfilePath);
-                mElementData.isFolder = isFolder;
-                isExistDataMng = false;
-            }
-            else
-            {
-                isExistDataMng = true;
-            }
+            get { return mListElement; }
         }
 
+
+        //public HierarchyElementData(string assetfilePath, bool isFolder)
+        //{
+        //    //if (BundleDataManager.Instance.GetInspectorElement())
+        //    //ElementData = BundleDataManager.Instance.CreateInspectorElement(ref assetfilePath, IsFolder);
+        //}
 
         static HierarchyElementData()
         {
@@ -67,7 +61,18 @@ public class HierarchyListWindow : SubWindow, IListElementOwner
 
         public void OnInit(ListElement element)
         {
-            element.DisableFold = !IsFolder;
+            mListElement = element;
+            ElementData = BundleDataManager.Instance.GetInspectorElement(mListElement.InstanceID);
+            if (ElementData == null)
+            {
+                ElementData = BundleDataManager.Instance.CreateInspectorElement(mListElement.Path, mListElement.IsFolder);
+            }
+            else
+            {
+                ElementData.IsFolder = mListElement.IsFolder;
+                ElementData.AssetFilePath = mListElement.Path;
+                ElementData.AssetName = Path.GetFileNameWithoutExtension(mListElement.Path);
+            }
         }
 
         #region IListElementData implementation
@@ -105,6 +110,7 @@ public class HierarchyListWindow : SubWindow, IListElementOwner
     public HierarchyListWindow(EditorWindow wnd)
         : base(wnd)
     {
+        //mAllElements = new Dictionary<int, ListElement>();
         listElement = new List<ListElement>();
         mAreaBox.SetX(5f, AreaBox.AreaType.FiexdRelativeLeft);
         mAreaBox.SetY(35f, AreaBox.AreaType.FiexdRelativeTop);
@@ -132,9 +138,9 @@ public class HierarchyListWindow : SubWindow, IListElementOwner
     public void AddElement(ListElement parent, string fileName, bool isFolder)
     {
         fileName = BundleHelp.FullPath2AssetPath(ref fileName);
-        BundleDataManager.Instance.AddResource(fileName, isFolder);
-        var data = new HierarchyElementData(fileName, isFolder);
-        var element = new ListElement(data, this);
+        //BundleDataManager.Instance.AddResource(fileName, IsFolder);
+        //var data = new HierarchyElementData(fileName, isFolder);
+        var element = new ListElement(new HierarchyElementData(), this, fileName, isFolder);
         if (parent != null)
         {
             parent.AddChild(element);
@@ -148,10 +154,10 @@ public class HierarchyListWindow : SubWindow, IListElementOwner
 
         if (isFolder)
         {
-            string[] fileStrings = Directory.GetFileSystemEntries(fileName);
+            string[] fileStrings = Directory.GetDirectories(fileName);
             for (int i = 0; i < fileStrings.Length; i++)
             {
-                if (BundleDataManager.Instance.IsFilter(ref fileStrings[i]) == false)
+                //if (BundleDataManager.Instance.IsFilter(ref fileStrings[i]) == false)
                     AddElement(element, fileStrings[i], Directory.Exists(fileStrings[i]));
             }
         }
@@ -161,26 +167,20 @@ public class HierarchyListWindow : SubWindow, IListElementOwner
 
     public void Init(List<string> rootFilePath)
     {
-        bool isFolder = false;
         for (int j = 0; j < rootFilePath.Count; j++)
         {
-            isFolder = Directory.Exists(rootFilePath[j]);
-            BundleDataManager.Instance.AddResource(rootFilePath[j], isFolder);
-
-            HierarchyElementData data = new HierarchyElementData(rootFilePath[j], isFolder);
-            ListElement rootElement = new ListElement(data, this);
-            string[] fileStrings = Directory.GetFileSystemEntries(rootFilePath[j]);
+            bool isFolder = Directory.Exists(rootFilePath[j]);
+            ListElement rootElement = new ListElement(new HierarchyElementData(), this, rootFilePath[j], isFolder);
+            string[] fileStrings = Directory.GetDirectories(rootFilePath[j]);
 
             for (int i = 0; i < fileStrings.Length; i++)
             {
-                if (BundleDataManager.Instance.IsFilter(ref fileStrings[i]) == false)
-                    AddElement(rootElement, fileStrings[i], Directory.Exists(fileStrings[i]));
+                AddElement(rootElement, fileStrings[i], Directory.Exists(fileStrings[i]));
             }
             
             rootElement.SetSpace(0f);
             listElement.Add(rootElement);
         }
-        
     }
 
 
@@ -201,11 +201,22 @@ public class HierarchyListWindow : SubWindow, IListElementOwner
         }
     }
 
+
     public void OnTriggerDeSelect(ListElement element)
     {
     }
 
+
+    public void OnAddNewElement(ListElement element)
+    {
+        BundleDataManager.Instance.OnAddNewElement(element);
+    }
+
+
     #endregion
 
 
+
+
+   
 }

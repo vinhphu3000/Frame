@@ -1,560 +1,104 @@
 {
-  "E:\\Unity Project\\Frame\\Project\\Assets\\LocalResources": {
+  "420954779": {
     "$type": "InspectorElementFolder, Assembly-CSharp-Editor",
     "isIgnore": false,
-    "isFolder": true,
-    "AssetName": "LocalResources",
-    "AssetFilePath": "E:\\Unity Project\\Frame\\Project\\Assets\\LocalResources",
     "IsIgnoreAll": false,
-    "FolderName": "LocalResources",
     "StrategieIndex": 0
   },
-  "Assets\\LocalResources\\Model": {
+  "-480178365": {
     "$type": "InspectorElementFolder, Assembly-CSharp-Editor",
     "isIgnore": false,
-    "isFolder": true,
-    "AssetName": "Model",
-    "AssetFilePath": "Assets\\LocalResources\\Model",
     "IsIgnoreAll": false,
-    "FolderName": "Model",
-    "StrategieIndex": 0
-  },
-  "Assets\\LocalResources\\Model\\Actor_meiying.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": false,
-    "AssetName": "Actor_meiying",
-    "AssetFilePath": "Assets\\LocalResources\\Model\\Actor_meiying.prefab",
-    "Depends": [
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_runfront_02.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Materials/MY_F_Weapon_001.mat",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_standhit.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_f_walk_R.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_p_01b.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Materials/MY_Z_Weapon_002.mat",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_bounce.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_f_shoot.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_f_stand.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_stand_f.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_skill_01.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Materials/MY_Z_Weapon_001.tga",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_p_02a.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_knockback.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Materials/MY_F_Weapon_002.mat",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_p_01a.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_downstand.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_f_runfront_02.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Materials/MY_Z_Weapon_002.tga",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_f_walk_L.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_f_walk_F.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_knockout.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_rush.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Materials/MY_Z_Weapon_001.mat",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Material/MY_Z_Weapon_001.mat",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Material/MY_F_Weapon_002.mat",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_runfront_01.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_dead.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_WinAction.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Material/MY_001.mat",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Materials/MY_F_Weapon_001.tga",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Materials/MY_001.mat",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Materials/MY_001.tga",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_p_03a.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_digup.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_p_03b.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_f_runfront_01.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_f_walk_B.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Material/MY_F_Weapon_001.mat",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_p_04.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_skill_03.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Materials/MY_F_Weapon_002.tga",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Material/MY_Z_Weapon_002.mat",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_dizzy.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_p_02b.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_skill_04.anim",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/meiying/Animation/m_z_skill_02.anim",
-        "groupNumber": 0
-      }
-    ],
-    "StrategieIndex": 0
-  },
-  "Assets\\LocalResources\\Shader.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": false,
-    "AssetName": "Shader",
-    "AssetFilePath": "Assets\\LocalResources\\Shader.prefab",
-    "Depends": null,
-    "StrategieIndex": 0
-  },
-  "Assets\\LocalResources\\Windows": {
-    "$type": "InspectorElementFolder, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": true,
-    "AssetName": "Windows",
-    "AssetFilePath": "Assets\\LocalResources\\Windows",
-    "IsIgnoreAll": false,
-    "FolderName": "Windows",
-    "StrategieIndex": 1
-  },
-  "Assets\\LocalResources\\Windows\\AsynchPvpAtlas-Test.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": false,
-    "AssetName": "AsynchPvpAtlas-Test",
-    "AssetFilePath": "Assets\\LocalResources\\Windows\\AsynchPvpAtlas-Test.prefab",
-    "Depends": [
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/AsynchPvp/AsynchPvpAtlas.prefab",
-        "groupNumber": -1
-      }
-    ],
-    "StrategieIndex": 1
-  },
-  "Assets\\LocalResources\\Windows\\BackpackWnd.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": false,
-    "AssetName": "BackpackWnd",
-    "AssetFilePath": "Assets\\LocalResources\\Windows\\BackpackWnd.prefab",
-    "Depends": [
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Consume/ConsumeAtlas.prefab",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Fonts/FZY4JW.TTF",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Main/MainAtlas.prefab",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Text/TextAtlas.prefab",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Base/BaseAtlas.prefab",
-        "groupNumber": -1
-      }
-    ],
-    "StrategieIndex": 1
-  },
-  "Assets\\LocalResources\\Windows\\BaseAtlas-Test.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": true,
-    "isFolder": false,
-    "AssetName": "BaseAtlas-Test",
-    "AssetFilePath": "Assets\\LocalResources\\Windows\\BaseAtlas-Test.prefab",
-    "Depends": [
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Base/BaseAtlas.prefab",
-        "groupNumber": -1
-      }
-    ],
-    "StrategieIndex": 1
-  },
-  "Assets\\LocalResources\\Windows\\Consume-Test.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": false,
-    "AssetName": "Consume-Test",
-    "AssetFilePath": "Assets\\LocalResources\\Windows\\Consume-Test.prefab",
-    "Depends": [
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Consume/ConsumeAtlas.prefab",
-        "groupNumber": -1
-      }
-    ],
-    "StrategieIndex": 1
-  },
-  "Assets\\LocalResources\\Windows\\Crusade-Test.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": false,
-    "AssetName": "Crusade-Test",
-    "AssetFilePath": "Assets\\LocalResources\\Windows\\Crusade-Test.prefab",
-    "Depends": [
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Crusade/CrusadeAtlas.prefab",
-        "groupNumber": -1
-      }
-    ],
-    "StrategieIndex": 1
-  },
-  "Assets\\LocalResources\\Windows\\Hero-Test.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": false,
-    "AssetName": "Hero-Test",
-    "AssetFilePath": "Assets\\LocalResources\\Windows\\Hero-Test.prefab",
-    "Depends": [
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Hero/HeroAtlas.prefab",
-        "groupNumber": -1
-      }
-    ],
-    "StrategieIndex": 1
-  },
-  "Assets\\LocalResources\\Windows\\Main-Test.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": false,
-    "AssetName": "Main-Test",
-    "AssetFilePath": "Assets\\LocalResources\\Windows\\Main-Test.prefab",
-    "Depends": [
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Main/MainAtlas.prefab",
-        "groupNumber": -1
-      }
-    ],
-    "StrategieIndex": 1
-  },
-  "Assets\\LocalResources\\Windows\\RankWnd.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": false,
-    "AssetName": "RankWnd",
-    "AssetFilePath": "Assets\\LocalResources\\Windows\\RankWnd.prefab",
-    "Depends": [
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Crusade/CrusadeAtlas.prefab",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/AsynchPvp/AsynchPvpAtlas.prefab",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Fonts/FZY4JW.TTF",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Text/TextAtlas.prefab",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Hero/HeroAtlas.prefab",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Base/BaseAtlas.prefab",
-        "groupNumber": -1
-      }
-    ],
-    "StrategieIndex": 1
-  },
-  "Assets\\LocalResources\\Windows\\RecuitWnd.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": false,
-    "AssetName": "RecuitWnd",
-    "AssetFilePath": "Assets\\LocalResources\\Windows\\RecuitWnd.prefab",
-    "Depends": [
-      {
-        "assetsFilePath": "Assets/_Art/Fonts/FZY4JW.TTF",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Text/TextAtlas.prefab",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Shop/ShopAtlas.prefab",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Base/BaseAtlas.prefab",
-        "groupNumber": -1
-      }
-    ],
-    "StrategieIndex": 1
-  },
-  "Assets\\LocalResources\\Windows\\RuleWnd.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": false,
-    "AssetName": "RuleWnd",
-    "AssetFilePath": "Assets\\LocalResources\\Windows\\RuleWnd.prefab",
-    "Depends": [
-      {
-        "assetsFilePath": "Assets/_Art/Fonts/FZY4JW.TTF",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Text/TextAtlas.prefab",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Base/BaseAtlas.prefab",
-        "groupNumber": -1
-      }
-    ],
-    "StrategieIndex": 1
-  },
-  "Assets\\LocalResources\\Windows\\Shop-Tes.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": false,
-    "AssetName": "Shop-Tes",
-    "AssetFilePath": "Assets\\LocalResources\\Windows\\Shop-Tes.prefab",
-    "Depends": [
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Shop/ShopAtlas.prefab",
-        "groupNumber": -1
-      }
-    ],
-    "StrategieIndex": 1
-  },
-  "Assets\\LocalResources\\Windows\\Test_111.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": false,
-    "AssetName": "Test_111",
-    "AssetFilePath": "Assets\\LocalResources\\Windows\\Test_111.prefab",
-    "Depends": [
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Consume/ConsumeAtlas.prefab",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Fonts/FZY4JW.TTF",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Main/MainAtlas.prefab",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Text/TextAtlas.prefab",
-        "groupNumber": -1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Base/BaseAtlas.prefab",
-        "groupNumber": -1
-      }
-    ],
-    "StrategieIndex": 1
-  },
-  "Assets\\LocalResources\\Windows\\Text-Test.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": false,
-    "AssetName": "Text-Test",
-    "AssetFilePath": "Assets\\LocalResources\\Windows\\Text-Test.prefab",
-    "Depends": [
-      {
-        "assetsFilePath": "Assets/_Art/Atlas/Text/TextAtlas.prefab",
-        "groupNumber": -1
-      }
-    ],
-    "StrategieIndex": 1
-  },
-  "Assets\\LocalResources\\Windows\\UI Root.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": false,
-    "AssetName": "UI Root",
-    "AssetFilePath": "Assets\\LocalResources\\Windows\\UI Root.prefab",
-    "Depends": null,
-    "StrategieIndex": 0
-  },
-  "Assets\\LocalResources\\Model\\model_anni.prefab": {
-    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
-    "isIgnore": false,
-    "isFolder": false,
-    "AssetName": "model_anni",
-    "AssetFilePath": "Assets\\LocalResources\\Model\\model_anni.prefab",
-    "Depends": [
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/anni/Materials/annie_prom_TX_CM.mat",
-        "groupNumber": 1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/anni/annie@idle3.fbx",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/anni/annie@idle4.fbx",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/anni/annie@channelwindup.fbx",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/anni/annie@dance.fbx",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/anni/annie@death.fbx",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/anni/annie@attack1.fbx",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/anni/annie@channel.fbx",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/anni/annie@attack2.fbx",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/anni/Materials/annie_prom_TX_CM.jpg",
-        "groupNumber": 1
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/anni/annie@idle1.fbx",
-        "groupNumber": 0
-      },
-      {
-        "assetsFilePath": "Assets/_Art/Model/Player/anni/annie@idle2.fbx",
-        "groupNumber": 0
-      }
-    ],
     "StrategieIndex": 2
+  },
+  "1191042686": {
+    "$type": "InspectorElementFolder, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "IsIgnoreAll": false,
+    "StrategieIndex": 1
+  },
+  "-336759927": {
+    "isIgnore": false,
+    "StrategieIndex": 0
+  },
+  "-153830961": {
+    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "StrategieIndex": 0
+  },
+  "-1292290975": {
+    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "StrategieIndex": 2
+  },
+  "2014826936": {
+    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "StrategieIndex": 1
+  },
+  "-607034007": {
+    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "StrategieIndex": 1
+  },
+  "-1071654517": {
+    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "StrategieIndex": 1
+  },
+  "-671655294": {
+    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "StrategieIndex": 1
+  },
+  "-932429446": {
+    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "StrategieIndex": 1
+  },
+  "-1796783143": {
+    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "StrategieIndex": 1
+  },
+  "-1864489560": {
+    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "StrategieIndex": 1
+  },
+  "-1366619213": {
+    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "StrategieIndex": 1
+  },
+  "190652381": {
+    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "StrategieIndex": 1
+  },
+  "1685615206": {
+    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "StrategieIndex": 1
+  },
+  "-17282542": {
+    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "StrategieIndex": 1
+  },
+  "708763873": {
+    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "StrategieIndex": 1
+  },
+  "1411083629": {
+    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "StrategieIndex": 1
+  },
+  "-1196765384": {
+    "$type": "InspectorElementPrefab, Assembly-CSharp-Editor",
+    "isIgnore": false,
+    "StrategieIndex": 0
   }
 }

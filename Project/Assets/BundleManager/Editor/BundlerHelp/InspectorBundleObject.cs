@@ -6,15 +6,19 @@ using UnityEngine;
 using System.Collections;
 
 
-
-
+/// <summary>
+/// bundle Inspector element
+/// </summary>
 
 [SerializeField]
 public class InspectorElement 
 {
     public bool isIgnore;
-    public bool isFolder;
+    [JsonIgnore]
+    public bool IsFolder;
+    [JsonIgnore]
     public string AssetName;
+    [JsonIgnore]
     public string AssetFilePath;
 
     public int StrategieIndex { get; set; }
@@ -22,7 +26,7 @@ public class InspectorElement
     public InspectorElement(string assetFilePath)
     {
         AssetName = Path.GetFileNameWithoutExtension(assetFilePath);
-        AssetFilePath = assetFilePath; //BundleHelp.FullPath2AssetPath(ref assetFilePath);
+        AssetFilePath = assetFilePath;
     }
 
 
@@ -32,6 +36,97 @@ public class InspectorElement
             (HierarchyListWindow.HierarchyElementData) element.ElementData;
         return elementData.ElementData;
     }
+}
+
+
+/// <summary>
+/// bundle Inspector folder element
+/// </summary>
+
+[SerializeField]
+public class InspectorElementFolder : InspectorElement
+{
+    public bool IsIgnoreAll { get; set; }
+
+    public InspectorElementFolder(string assetFilePath)
+        : base(assetFilePath)
+    {
+        IsFolder = true;
+        IsIgnoreAll = false;
+    }
+}
+
+
+/// <summary>
+/// bundle Inspector prefab element
+/// </summary>
+
+[SerializeField]
+public class InspectorElementPrefab : InspectorElement
+{
+    public class InspectorElementPrefabDepend
+    {
+        /// <summary>
+        /// Assets相对路径
+        /// </summary>
+        public string assetsFilePath;
+
+        /// <summary>
+        /// 组
+        /// </summary>
+        public short groupNumber;
+    }
+
+
+    private bool isGetDependcies = false;
+
+    [JsonIgnore]
+    private InspectorElementPrefabDepend[] mDepends;
+    [JsonIgnore]
+    public InspectorElementPrefabDepend[] Depends
+    {
+        get
+        {
+            if (isGetDependcies)
+                return null;
+
+            if (mDepends == null)
+            {
+                string[] dependStrings = BuildHelp.GetDependenciesArray(AssetFilePath);
+                if (dependStrings == null)
+                {
+                    isGetDependcies = true;
+                    return mDepends;
+                }
+
+                mDepends = new InspectorElementPrefabDepend[dependStrings.Length];
+                for (int i = 0; i < Depends.Length; i++)
+                {
+                    mDepends[i] = new InspectorElementPrefabDepend();
+                    mDepends[i].assetsFilePath = dependStrings[i];
+                }
+
+                //  reset strategie index
+                BuildManager.ApplyStrategyGroup(this, StrategieIndex);
+            }
+            return mDepends;
+        }
+        set { mDepends = value; }
+
+    }
+
+
+    public void ResetGetDependcies()
+    {
+        isGetDependcies = false;
+    }
+
+
+    public InspectorElementPrefab(string assetFilePath)
+        : base(assetFilePath)
+    {
+    }
+
 }
 
 
@@ -109,136 +204,3 @@ public class BuildStrategy
         return 0;
     }
 }
-
-
-[SerializeField]
-public class InspectorElementFolder : InspectorElement
-{
-
-    public bool IsIgnoreAll { get; set; }
-
-
-
-    public string FolderName
-    {
-        get { return AssetName; }
-    }
-
-    public InspectorElementFolder(string assetFilePath)
-        : base(assetFilePath)
-    {
-        isFolder = true;
-        IsIgnoreAll = false;
-    }
-}
-
-
-[SerializeField]
-public class InspectorElementPrefab : InspectorElement
-{
-    public class InspectorElementPrefabDepend
-    {
-        /// <summary>
-        /// Assets相对路径
-        /// </summary>
-        public string assetsFilePath;
-
-        /// <summary>
-        /// 组
-        /// </summary>
-        public short groupNumber;
-    }
-
-
-    private bool isGetDependcies = false;
-
-
-    private InspectorElementPrefabDepend[] mDepends;
-    public InspectorElementPrefabDepend[] Depends
-    {
-        get
-        {
-            if (isGetDependcies)
-                return null;
-
-            if (mDepends == null)
-            {
-                string[] dependStrings = BuildHelp.GetDependenciesArray(AssetFilePath);
-                if (dependStrings == null)
-                {
-                    isGetDependcies = true;
-                    return mDepends;
-                }
-
-                mDepends = new InspectorElementPrefabDepend[dependStrings.Length];
-                for (int i = 0; i < Depends.Length; i++)
-                {
-                    mDepends[i] = new InspectorElementPrefabDepend();
-                    mDepends[i].assetsFilePath = dependStrings[i];
-                }
-            }
-            return mDepends;
-        }
-        set { mDepends = value; }
-
-    }
-
-
-    public void ResetGetDependcies()
-    {
-        isGetDependcies = false;
-    }
-
-
-    public InspectorElementPrefab(string assetFilePath)
-        :base(assetFilePath)
-    {
-    }
-
-}
-
-
-//public class InspectorBundleObject : InspectorElement 
-//{
-//    public class DependsData
-//    {
-//        /// <summary>
-//        /// 打包时是否忽略这个资源
-//        /// </summary>
-//        public bool isIgnore;
-
-//        /// <summary>
-//        /// Assets相对路径
-//        /// </summary>
-//        public string assetsFilePath;
-//    }
-
-//    public string AssetsFilePath;
-//    public DependsData[] Depnds;
-
-
-//    public InspectorBundleObject(string assetFilePath)
-//    {
-//        AssetName = Path.GetFileNameWithoutExtension(assetFilePath);
-//        AssetsFilePath = BundleHelp.FullPath2AssetPath(ref assetFilePath);
-
-//        string[] dependStrings = BuildHelp.GetDependencies(AssetsFilePath, new ExporterPlanBundleObject());
-//        Depnds = new DependsData[dependStrings.Length];
-//        for (int i = 0; i < Depnds.Length; i++)
-//        {
-//            Depnds[i] = new DependsData();
-//            Depnds[i].assetsFilePath = dependStrings[i];
-//        }
-//    }
-
-
-//    //public void Draw()
-//    //{
-//    //    if (PrefabObject == null)
-//    //        PrefabObject = AssetDatabase.LoadAssetAtPath<GameObject>(AssetsFilePath);
-
-//    //    EditorGUILayout.ObjectField("Prefab AssetName", PrefabObject, typeof(GameObject), false);
-//    //    EditorGUILayout.BeginScrollView();
-//    //}
-
-//}

@@ -1,29 +1,25 @@
 ManifestFileVersion: 0
-CRC: 767324092
+CRC: 2150461255
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: adcf2c651464cf5b3bbb28eea9c553ec
+    Hash: 09d97ae007fdd886312f5cb5dfa9f3ea
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 321b1e40513720ad52d5cf14105338f3
+    Hash: 20c620dd376273e9b8b62b50484b60f5
 HashAppended: 0
 ClassTypes:
 - Class: 1
   Script: {instanceID: 0}
 - Class: 4
   Script: {instanceID: 0}
-- Class: 21
-  Script: {instanceID: 0}
-- Class: 28
-  Script: {instanceID: 0}
-- Class: 48
-  Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 Assets:
-- Assets/_Art/Atlas/Shop/ShopAtlas.prefab
+- Assets/LocalResources/Windows/BaseAtlas-Test.prefab
 Dependencies:
-- E:/Unity Project/Frame/Project/Assets/../../Resources/TestBuildNew/shader
+- E:/Unity Project/Frame/Project/Assets/../../Resources/TestBuildNew/baseatlas

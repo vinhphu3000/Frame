@@ -12,7 +12,9 @@ public class EditorStyleViewer : EditorWindow
     }
     void OnGUI()
     {
+        GUI.color = Color.red;
         GUILayout.BeginHorizontal("HelpBox");
+        GUI.color = Color.white;
         GUILayout.Label("Click a Sample to copy its AssetName to your Clipboard", "MiniBoldLabel");
         GUILayout.FlexibleSpace();
         GUILayout.Label("Search:");
@@ -26,7 +28,9 @@ public class EditorStyleViewer : EditorWindow
 
             if (style.name.ToLower().Contains(search.ToLower()))
             {
+                //GUI.color = Color.red;
                 GUILayout.BeginHorizontal("PopupCurveSwatchBackground");
+                //GUI.color = Color.white
                 GUILayout.Space(7);
                 if (GUILayout.Button(style.name, style))
                 {
