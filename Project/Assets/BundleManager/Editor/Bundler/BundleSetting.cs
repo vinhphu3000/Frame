@@ -181,7 +181,6 @@ public class BundleSetting
         {
             switch (value)
             {
-                case BuildTarget.StandaloneGLESEmu:
                 case BuildTarget.StandaloneLinux:
                 case BuildTarget.StandaloneLinux64:
                 case BuildTarget.StandaloneLinuxUniversal:

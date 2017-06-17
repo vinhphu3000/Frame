@@ -410,7 +410,7 @@ namespace CS.CSUI
         private bool IsHaveGoback( GameObject obj )
         {
             if (obj == null) return false;
-            return obj.transform.FindChild("_Goback") != null;
+            return obj.transform.Find("_Goback") != null;
         }
     }
 }
