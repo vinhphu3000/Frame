@@ -20,7 +20,7 @@ public sealed class BundleHelp
     {
 #if UNITY_EDITOR
         return Path.Combine(Application.dataPath, src.Substring("Assets/".Length));
-#elif
+#else
         return src;
 #endif
     }
